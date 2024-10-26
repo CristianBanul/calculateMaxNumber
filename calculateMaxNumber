@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+public static int maxNumber( int num1, int num2){
+    return (num1 > num2) ? num1 : num2;
+}
+
+public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Introduce the first name please:");
+    int num1 = scanner.nextInt();
+
+
+    System.out.println("Now introduce the second name please:");
+    int num2 = scanner.nextInt();
+
+    int resultado = maxNumber(num1, num2);
+    System.out.println("The max number is:" + resultado);
+
+    scanner.close();
+    }
+}
